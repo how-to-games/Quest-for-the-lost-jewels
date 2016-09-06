@@ -12,4 +12,8 @@ public class CharacterSelect : MonoBehaviour {
 	void Update () {
 	
 	}
+	public void SetCharacter(int character) {
+		GetComponents<SpriteRenderer> ().enabled = false;
+		GameObject.Find ("Character" + character).GetComponents<SpriteRenderer> ().enabled = true;
+	}
 }

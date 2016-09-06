@@ -7,4 +7,15 @@ public class SaveRW : MonoBehaviour {
 		PlayerPrefs.Save ();
 		print ("Saved!");
 	}
+	public static void Reset() {
+		print("Resetting");
+		PlayerPrefs.DeleteAll ();
+		print ("Reset all");
+	}
+	public void ResetBtn() {
+		Reset ();
+	}
+	public void SaveBtn() {
+		Save ();
+	}
 }
